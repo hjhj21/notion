@@ -56,7 +56,7 @@
         <h2 class="box" id="minutes"></h2>
         <h2 class="box" id="seconds"></h2>
         <h3>
-            Left in <br>This Month
+            이번 달 <br>
         </h3>
     </div>
 
@@ -77,10 +77,10 @@
     hours = 23 - now.getHours();
     minutes = 59 - now.getMinutes();
     seconds = 59 - now.getSeconds();
-    left_days.innerHTML = days + "<br> <span class=\"small\"> 일 </span>"
-    left_hours.innerHTML = hours + "<br> <span class=\"small\"> 시간</span>";
-    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">분</span>";
-    left_seconds.innerHTML = seconds + "<br> <span class=\"small\">초</span>";
+    left_days.innerHTML = days + "<br> <span class=\"small\"> days </span>"
+    left_hours.innerHTML = hours + "<br> <span class=\"small\"> hours</span>";
+    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">mins</span>";
+    left_seconds.innerHTML = seconds + "<br> <span class=\"small\">secs</span>";
     }
 
 timer = setInterval (showRemaining, 1000) 
