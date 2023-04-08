@@ -52,9 +52,9 @@
     <div id="counter">
 
         <h2 class="box" id="일"></h2>
-        <h2 class="box" id="hours"></h2>
-        <h2 class="box" id="minutes"></h2>
-        <h2 class="box" id="seconds"></h2>
+        <h2 class="box" id="시간"></h2>
+        <h2 class="box" id="분"></h2>
+        <h2 class="box" id="초"></h2>
         <h3>
             Left in <br>This Month
         </h3>
@@ -65,9 +65,9 @@
 <script>
     function CountDownTimer  () {
     left_days = document.getElementById("일");
-    left_hours = document.getElementById("hours");
-    left_minutes = document.getElementById("minutes");
-    left_seconds = document.getElementById("seconds");
+    left_hours = document.getElementById("시간");
+    left_minutes = document.getElementById("분");
+    left_seconds = document.getElementById(초초");
  
     }
     function showRemaining (){
@@ -78,9 +78,9 @@
     minutes = 59 - now.getMinutes();
     seconds = 59 - now.getSeconds();
     left_days.innerHTML = days + "<br> <span class=\"small\"> 일 </span>"
-    left_hours.innerHTML = hours + "<br> <span class=\"small\"> hours</span>";
-    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">mins</span>";
-    left_seconds.innerHTML = seconds + "<br> <span class=\"small\">secs</span>";
+    left_hours.innerHTML = hours + "<br> <span class=\"small\"> 시간</span>";
+    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">분</span>";
+    left_seconds.innerHTML = seconds + "<br> <span class=\"small\"></span>";
     }
 
 timer = setInterval (showRemaining, 1000) 
